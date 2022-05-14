@@ -1,13 +1,7 @@
 use_frameworks!
 
-platform :ios, '9.0'
+platform :ios, '8.0'
 
 target 'XLDeviceModel_Example' do
   pod 'XLDeviceModel', :path => '../'
-
-  target 'XLDeviceModel_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end
