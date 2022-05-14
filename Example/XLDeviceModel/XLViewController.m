@@ -7,7 +7,7 @@
 //
 
 #import "XLViewController.h"
-
+#import "UIDevice+XLDeviceModel.h"
 @interface XLViewController ()
 
 @end
@@ -17,7 +17,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    UIDevice *device = [UIDevice currentDevice];
+    NSLog(@"%@", [UIDevice xl_currentDeviceModel]);
 }
 
 - (void)didReceiveMemoryWarning
